@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 5rem auto;
+  padding: 3rem auto;
+}
+
+.form-item {
+  padding: .5rem 1rem;
+  margin: .5rem;
+  border: 1px solid grey;
+  border-radius: .5rem;
+}
+
+.form-item:hover {
+  border: 1px solid orangered;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label:before {
+  content: "";
+  display: inline-block;
+  width: 5%;
+  background-size: center;
+  margin-right: 10px;
+  vertical-align: middle;
+  fill: #ffffff;
+}
+
+label[for="Beginner"]:before {
+  background: url('/src/img/seedling-solid.svg') no-repeat center center;
+  /* filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(238deg) brightness(102%) contrast(102%); */
+  background-size: 50%;
+  padding: 1rem;
+  background-color: rgb(255, 60, 0);
+  border-radius: 100%;
+}
+
+label[for="Intermediate"]:before {
+  background: url('/src/img/compass-solid.svg') no-repeat center center;
+  background-size: 50%;
+  padding: 1rem;
+  background-color: rgb(255, 60, 0);
+  border-radius: 100%;
+}
+
+label[for="Advanced"]:before {
+  background: url('/src/img/rocket-solid.svg') no-repeat center center;
+  background-size: 50%;
+  padding: 1rem;
+  background-color: rgb(255, 60, 0);
+  border-radius: 100%;
+}
+
+label[for="Expert"]:before {
+  background: url('/src/img/trophy-solid.svg') no-repeat center center;
+  background-size: 50%;
+  padding: 1rem;
+  background-color: rgb(255, 60, 0);
+  border-radius: 100%;
+}
+
+/* buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev-btn {
+  background-color: transparent;
+  color: rgb(255, 69, 0);
+  border: 1px solid rgb(255, 60, 0);
+  border-radius: .6rem;
+  padding: .5rem 1.5rem;
+}
+
+.next-btn {
+  background-color: rgb(255, 69, 0);
+  color: rgb(255, 255, 255);
+  border-radius: .6rem;
+  padding: .5rem 1.5rem;
+}
+
+
+/* .card {
+  width: 80%;
+
+} */
+/* write your CSS here */

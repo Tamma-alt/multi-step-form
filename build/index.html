@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="/src/input.css" />
+    <title>Sign Up</title>
+  </head>
+  <body class="bg-gray-300">
+    <!-- Write your HTML here -->
+    <main class="container">
+      <h1 class="font-extrabold text-xl text-center">
+        Join our Community of Developers
+      </h1>
+      <p class="text-center">
+        To join our community and paricipate in frontend challenges.
+        <span class="block">Please fill out the following forms.</span>
+      </p>
+      <div
+        class="card w-4/5 my-4 m-auto rounded-lg py-2 px-4 bg-white"
+      >
+        <div><!-- let the progress bar be here--></div>
+        <hr class="my-6" />
+
+        <form action="" class="my-3 hidden" id="step-one">
+          <h1 class="font-bold">Personal information</h1>
+          <p>
+            Please provide your personal details so we can ge to know you
+            better.
+          </p>
+
+          <div class="md:grid grid-cols-2">
+            <p class="input my-2">
+              <label for="full-name" class="block mb-2 font-bold"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                name="fullName"
+                id="full-name"
+                placeholder="John Doe"
+                class="border border-orange-500 py-1.5 px-2 rounded-md"
+              />
+            </p>
+            <p class="input my-2">
+              <label for="email" class="block mb-2 font-bold"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="name@email.com"
+                class="border border-orange-500 py-1.5 px-2 rounded-md"
+              />
+            </p>
+            <p class="input my-2">
+              <label for="phone-number" class="block mb-2 font-bold"
+                >Phone Number</label
+              >
+              <input
+                type="tel"
+                name="phone-number"
+                id="phone-number"
+                placeholder="+91 1234567890"
+                class="border border-orange-500 py-1.5 px-2 rounded-md"
+              />
+            </p>
+            <p class="input my-2">
+              <label for="porfolio-github" class="block mb-2 font-bold"
+                >Porfolio/Github Link</label
+              >
+              <input
+                type="text"
+                name="porfolio-github"
+                id="porfolio-github"
+                placeholder="github.com/johndoe"
+                class="border border-orange-500 py-1.5 px-2 rounded-md"
+              />
+            </p>
+          </div>
+
+          <hr class="my-4" />
+          <button
+            class="bg-orange-500 text-white w-full md:w-1/4 m-auto md:ml-80 py-1.5 rounded-md"
+          >
+            Next Step
+          </button>
+        </form>
+
+
+        <form action="" class="my-3 hidden" id="step-two">
+          <h1 class="font-bold text-xl">Skill Level</h1>
+          <p>Please tell us about your skill level in frontend developement. </p>
+
+          <div class="md:grid md:grid-cols-2">
+            <p  class="form-item">
+              <input type="radio" name="beginner" id="beginner" value="beginner">
+              <label for="Beginner">Beginner</label>
+            </p>
+            <p class="form-item">
+              <input type="radio" name="intermediate" id="intermediate" value="intermediate">
+              <label for="Intermediate">Intermediate </label>
+            </p>
+            <p class="form-item">
+              <input type="radio" name="advanced" id="advanced" value="advanced">
+              <label for="Advanced">Advanced </label>
+            </p>
+            <p class="form-item">
+              <input type="radio" name="expert" id="expert" value="expert">
+              <label for="Expert">Expert</label>
+            </p>
+          </div>
+          <hr class="my-6">
+            <div class="buttons my-6">
+              <button type="button" class="prev-btn ">Go Back</button>
+              <button type="button" class="next-btn">Next Step</button>
+            </div>
+        </form>
+
+
+        <form action="" class="my-3 hidden" id="step-three">
+          <h1 class="font-bold text-xl">challenge Preference</h1>
+          <p>Please tell us which frontend challenges you would like to participate in.</p>
+
+          <div class="md:grid md:grid-cols-2">
+            <p  class="form-item">
+              <input type="checkbox" name="html/css/js" id="html-css-js" value="html/css/js">
+              <label for="html/css/js">HTML/CSS/JS</label>
+            </p>
+            <p class="form-item">
+              <input type="checkbox" name="react.js" id="react" value="react.js">
+              <label for="react.js">React.js </label>
+            </p>
+            <p class="form-item">
+              <input type="checkbox" name="angular.js" id="angular" value="angular.js">
+              <label for="angular.js">Angular.js </label>
+            </p>
+            <p class="form-item">
+              <input type="checkbox" name="vue.js" id="vue" value="vue.js">
+              <label for="Vue.js">Vue.js</label>
+            </p>
+          </div>
+          <hr class="my-6">
+            <div class="buttons my-6">
+              <button type="button" class="prev-btn ">Go Back</button>
+              <button type="button" class="next-btn">Next Step</button>
+            </div>
+        </form>
+
+        <section class="review hidden">
+          <h1>Review and Confirm</h1>
+          <p>Please review your information to make sure everything is accurate.</p>
+          <ul>
+            <li>
+              <div class="full-name"></div>
+            </li>
+            <li>
+              <div class="email"></div>
+            </li>
+            <li>
+              <div class="phone-number"></div>
+            </li>
+            <li>
+              <div class="porfolio-github"></div>
+            </li>
+            <li>
+              <div class="skill-level"></div>
+            </li>
+            <li>
+              <div class="challenge-pref"></div>
+            </li>
+          </ul>
+
+          <hr class="my-6">
+            <div class="buttons my-6">
+              <button type="button" class="prev-btn ">Go Back</button>
+              <button type="button" class="next-btn">Submit</button>
+            </div>
+        </section>
+
+        <section class="success text-center w-4/5 m-auto">
+          
+          <h1 class="font-bold text-3xl my-3">Congratulaions!🎉</h1>
+          <p>
+            Your profile has been created and you are now read to star participating in challenges that match your interests and coding experience level.
+          </p>
+        </section>
+      </div>
+
+      
+    </main>
+
+    <script src="/src/script.js"></script>
+  </body>
+</html>
